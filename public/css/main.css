@@ -132,3 +132,11 @@ h1, h2, h3, h4, h5, h6
     border-top: 1px solid #171717;
     text-align: left;
 }
+
+footer a, a:visited {
+    color: #777!important;
+}
+
+footer a:hover, a:active {
+    text-decoration: underline;
+}
