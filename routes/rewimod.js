@@ -39,4 +39,13 @@ router.get('/join', function (req, res) {
     });
 });
 
+router.get('/legal', function (req, res) {
+    fs.readFile(path.join(__dirname, '/../public/static/legal.html'), 'utf8', function (err, text) {
+        if (err) {
+            throw err;
+        }
+        res.send(text);
+    });
+});
+
 module.exports = router;
